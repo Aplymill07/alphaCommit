@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contact/page'
+
   get 'posts/index'
 
   get 'welcome/index'
@@ -10,6 +12,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'welcome/home', to:'welcome#home'
   get 'welcome/about', to:'welcome#about'
+  get 'welcome/contact', to:'welcome#contact'
+  get 'welcome/blog', to:'welcome#blog'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
